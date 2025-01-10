@@ -279,90 +279,20 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
-    width: 100%; /* กำหนดให้มีความกว้าง 100% เพื่อให้เต็มความกว้างของพาเรนต์ */
-    max-width: 300px; /* จำกัดความกว้างสูงสุด */
-    text-align: center; /* จัดตัวอักษรให้อยู่กลาง */
+    width: 100%; 
+    max-width: 300px;
+    text-align: center;
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
-    margin: 0.5rem 0; /* ให้ปุ่มมีระยะห่างระหว่างกัน */
+    margin: 0.5rem 0;
 }
 
 .project-details a:hover,
 .project-details button:hover {
-    background-color: white; /* สีขาวเมื่อเมาส์ชี้ */
+    background-color: white;
     border-color: white;
-    color: var(--accent-color); /* เปลี่ยนข้อความเป็นสีฟ้า */
+    color: var(--accent-color);
 }
 
-/* Styling for the hobbies section */
-.hobbies-section {
-    background-color: #1c1c1c;
-    color: var(--text-primary);
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.hobbies-section h1 {
-    font-size: 2.5rem;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-}
-
-.hobbies-section p {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-}
-
-/* Create a grid layout for the hobby items */
-.hobbies-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 columns on large screen */
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Individual hobby items */
-.hobby-item {
-    background-color: rgba(40, 40, 40, 0.5);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: auto; /* กำหนดขนาดกว้าง */
-    height: auto; /* กำหนดขนาดสูง */
-    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.hobby-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.hobby-item img {
-    width: 200px; /* ขนาดกว้างของรูปภาพเต็มขนาด container */
-    height: 200px; /* ขนาดสูงของรูปภาพเต็มขนาด container */
-    object-fit: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่โดยไม่บิดเบือน */
-    border-radius: var(--border-radius); /* ทำให้มุมของรูปโค้ง */
-}
-
-
-.hobby-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-.hobby-item p {
-    font-size: 1rem;
-    color: var(--text-secondary);
-}
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -424,19 +354,3 @@ p {
     }
 }
 
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-    .hobbies-section h1 {
-        font-size: 2rem;
-    }
-
-    .hobbies-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .hobbies-grid {
-        grid-template-columns: 1fr;
-    }
-}
