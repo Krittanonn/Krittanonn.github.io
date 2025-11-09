@@ -1,95 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Krittanon M. - Portfolio | Computer Science student at Kasetsart University, skilled in backend development.">
-    <meta property="og:title" content="Krittanon M. - Portfolio">
-    <meta property="og:image" content="img/profile.jpg">
-    <link rel="stylesheet" href="css/Portfolio.css">
-    <title>Krittanon M. - Portfolio</title>
-    <style>
-        .image-gallery {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krittanon M. | Portfolio</title>
+  <meta name="description" content="Krittanon M. - Computer Science Student & Backend Developer" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
     <div class="container">
-        <!-- <div class="theme-language-toggle">
-            <button id="theme-toggle">Dark</button>
-            <button id="language-toggle">TH</button>
-        </div> -->
-        <section class="profile">
-            <div class="profile-content">
-                <h1>Welcome to My Portfolio</h1>
-                <h2>Krittanon M. (Fluk)</h2>
-                <p>A Computer Science student at Kasetsart University, exploring technology and developing skills.</p>
-                <div class="btn-group">
-                    <a href="#details" class="btn">Details</a>
-                    <a href="https://drive.google.com/file/d/1_alTG6sX-ktskRRmCHzS1LnNVxMBG12m/view?usp=sharing" class="btn" target="_blank">Resume</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="details" class="profile-details">
-            <div class="container">
-                <div class="image-gallery">
-                    <img src="img/x2-1.jpg" alt="Krittanon Museesut" class="profile-image">
-                    <img src="img/x1-1.jpg" alt="Krittanon Museesut" class="profile-image">
-                    <img src="img/x3-1.jpg" alt="Krittanon Museesut" class="profile-image">
-                </div>
-                <div class="profile-info">
-                    <h1>Krittanon Museesut</h1>
-                    <h2>Kasetsart University</h2>
-                    <p>Bachelor's Degree, Faculty of Liberal Arts and Science<br>
-                        Department of Computational Science and Digital Technology</p>
-                    <p>Interested in backend development, experienced in building web apps such as expense tracking, web-based games, and scheduling applications. Developed a Line bot for class reminders.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/imkrit.404/" class="social-link" target="_blank">Instagram</a>
-                        <a href="https://www.tiktok.com/@mssktn" class="social-link" target="_blank">TikTok</a>
-                        <a href="https://github.com/Krittanonn" class="social-link" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <div class="container">
-                <h1>Skills</h1>
-                <div class="skills-grid">
-                    <a href="javapage.html" class="skill-item">
-                        <img src="img/Java.png" alt="Java"><span>Java</span>
-                    </a>
-                    <a href="Cpage.html" class="skill-item">
-                        <img src="img/C.png" alt="C/C++"><span>C</span>
-                    </a>
-                    <a href="sorry.html" class="skill-item">
-                        <img src="img/Python.png" alt="Python"><span>Python</span>
-                    </a>
-                    <a href="MySQL.html" class="skill-item">
-                        <img src="img/MySQL.png" alt="MySQL"><span>MySQL</span>
-                    </a>
-                    <a href="htmlpage.html" class="skill-item">
-                        <img src="img/Hyml5.png" alt="HTML/CSS"><span>HTML, CSS</span>
-                    </a>
-                    <a href="sorry.html" class="skill-item">
-                        <img src="img/nodeJS.png" alt="Node.js"><span>Node.js</span>
-                    </a>
-                    <a href="sorry.html" class="skill-item">
-                        <img src="img/spring-boot.png" alt="Spring Boot"><span>Spring Boot</span>
-                    </a>
-                    <a href="sorry.html" class="skill-item">
-                        <img src="img/Bootstrap.png" alt="Bootstrap"><span>Bootstrap</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        
+      <h1 class="logo">Krittanon</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <script src="js/Portfolio.js"></script>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="section home">
+    <div class="container home-content">
+      <h2>Hello, I'm</h2>
+      <h1>Krittanon Museesut</h1>
+      <p>Computer Science student at Kasetsart University<br>Interested in Software Developer</p>
+      <div class="btn-group">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="https://drive.google.com/file/d/1_alTG6sX-ktskRRmCHzS1LnNVxMBG12m/view?usp=sharing" class="btn-outline" target="_blank">Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="container about-content">
+      <img src="img/krittanon.jpg" alt="Profile" class="about-img" />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm passionate about crafting clean, efficient, and user-friendly web applications.
+          I focus on backend logic but also love minimal, intuitive UI design.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/Krittanonn" target="_blank">GitHub</a>
+          <a href="https://www.instagram.com/krittanon_m/" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@krittanonm" target="_blank">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><img src="img/icon-php.png" alt=""><br><span>Php</span></div>
+        <div class="skill-item"><img src="img/icon-c.png" alt=""><br><span>C</span></div>
+        <div class="skill-item"><img src="img/icon-py.png" alt=""><br><span>Python</span></div>
+        <div class="skill-item"><img src="img/icon-java.png" alt=""><br><span>java</span></div>
+        <div class="skill-item"><img src="img/icon-sql.png" alt=""><br><span>MySQL</span></div>
+        <div class="skill-item"><img src="img/icon-html.png" alt=""><br><span>HTML / CSS</span></div>
+        <div class="skill-item"><img src="img/icon-js.png" alt=""><br><span>Node.js</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- 1 -->
+        <div class="project-card">
+            <h3>HRM_preco</h3>
+            <p>
+                A Human Resource Management system built with PHP and Laravel.
+                Features employee management, salary tracking, leave requests, and role-based access control.
+                Designed for efficient HR operations and easy scalability.
+            </p>
+            <a href="https://github.com/Krittanonn/HRM_preco" class="btn-view" target="_blank">
+                View Project
+            </a>
+        </div>
+        <!-- 2 -->
+        <div class="project-card">
+            <h3>Inventory Management System</h3>
+            <p>
+                A scalable warehouse management system that tracks products, suppliers, 
+                and stock levels across multiple warehouses. Features purchase order handling, 
+                stock movement tracking, and audit logging for accurate and transparent inventory control.
+            </p>
+            <a href="https://github.com/Krittanonn/database_inventory" class="btn-view" target="_blank">
+                View Project
+            </a>
+        </div>
+        <!-- 3 -->
+        <div class="project-card">
+            <h3>Expense_Tracking</h3>
+            <p>
+                A web-based expense tracking application built with PHP and Laravel.
+                Allows users to record, categorize, and analyze their spending efficiently
+                with a secure backend and intuitive interface.
+            </p>
+            <a href="https://github.com/Krittanonn/ProjectTest" class="btn-view" target="_blank">
+                View Project
+            </a>
+        </div>
+        <!-- 4 -->
+        <div class="project-card">
+        <h3>WebTable</h3>
+        <p>
+            A responsive web-based class schedule table designed to help students view their weekly timetable easily across devices.
+        </p>
+        <div class="btn-group">
+            <a href="https://github.com/Krittanonn/WebTable" class="btn-view" target="_blank">
+            View Project
+            </a>
+            <a href="https://my.krittanon.site/WebTable/" class="btn-view" target="_blank">
+            View Website
+            </a>
+        </div>
+        </div>
+        <!-- 5 -->
+        <div class="project-card">
+          <h3>Expense Tracker</h3>
+          <p>
+            An easy-to-use expense tracker app that helps you record and analyze your spending efficiently.
+        </p>
+        <a href="https://github.com/Krittanonn/Expense-Tracker" class="btn-view" target="_blank">
+        View Project
+        </a>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaborations or job opportunities!</p>
+      <div class="contact-links">
+        <a href="mailto:krittanon.mss@gmail.com">krittanon.mss@gmail.com</a>
+        <a href="tel:+66800010240">+66 80 001 0240</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Krittanon Museesut | Minimal Portfolio</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
