@@ -1,0 +1,191 @@
+/* ===== GLOBAL ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+.container { width: 90%; max-width: 1000px; margin: auto; }
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+.navbar .container {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 0;
+}
+.logo { font-size: 1.3rem; font-weight: 600; }
+.logo span { color: #888; }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a {
+  text-decoration: none; color: #666; font-size: 0.95rem;
+  transition: 0.3s;
+}
+.nav-links a:hover { color: #000; }
+
+/* ===== SECTIONS ===== */
+.section { padding: 100px 0; }
+.section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* ===== HOME ===== */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center; align-items: center;
+  text-align: center;
+  background: #f8f8f8;
+}
+.home-content h1 { font-size: 2rem; margin: 10px 0; }
+.home-content p { color: #555; margin-bottom: 20px; }
+.btn-group { display: flex; justify-content: center; gap: 10px; }
+.btn, .btn-outline {
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn { background: #333; color: #fff; }
+.btn:hover { background: #555; }
+.btn-outline {
+  border: 1px solid #333; color: #333;
+}
+.btn-outline:hover {
+  background: #333; color: #fff;
+}
+
+/* ===== ABOUT ===== */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.about-img {
+  width: 280px; height: 280px; border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.about-text { flex: 1; }
+.about-text p { color: #555; margin: 10px 0; }
+.social-links a {
+  margin-right: 15px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.social-links a:hover { color: #000; }
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+.skill-item img {
+  width: 60px; height: 60px; object-fit: contain; margin-bottom: 10px;
+}
+.skill-item span { color: #333; }
+
+/* ===== PROJECTS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  display: inline-block;
+  text-align: center;
+  margin-top: auto;
+}
+
+.btn-view {
+  display: inline-block;
+  text-align: center;
+  background: #f2f2f2;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.btn-view:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+
+/* ===== CONTACT ===== */
+.contact { text-align: center; }
+.contact-links a {
+  display: block;
+  color: #333;
+  margin: 5px 0;
+  text-decoration: none;
+}
+.contact-links a:hover { color: #000; }
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about-content { flex-direction: column; text-align: center; }
+}
